@@ -31,3 +31,11 @@ FROM employees
 JOIN locations ON employees.id = locations.employee_id
 GROUP BY employees.name
 HAVING COUNT(locations.id) >= 2;
+
+-- Query to display customers who have completed 2 or more rentals.
+
+SELECT customers.name, COUNT(locations.id) AS total_rentals
+FROM customers
+JOIN locations ON customers.id = locations.customer_id
+GROUP BY customers.name
+HAVING COUNT(locations.id) >= 2;
