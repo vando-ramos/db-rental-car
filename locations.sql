@@ -65,3 +65,7 @@ FROM locations;
 SELECT * FROM locations
 WHERE total = (SELECT MAX(total) FROM locations);
 
+-- Query to display all rentals made between the dates 2022-05-20 to 2022-12-25.
+
+SELECT * FROM locations
+WHERE start_date BETWEEN '2022-05-20' AND '2022-12-25';
