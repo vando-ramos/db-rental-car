@@ -23,3 +23,11 @@ VALUES
 (4, '2018-02-20', '2018-03-05', 1250, 6, 4, 6),
 (5, '2022-11-20', '2022-11-29', 900, 1, 3, 2),
 (6, '2019-10-01', '2019-10-29', 2800, 3, 1, 6);
+
+-- Query to display employees who have completed 2 or more rentals.
+
+SELECT employees.name, COUNT(locations.id) AS total_rentals
+FROM employees
+JOIN locations ON employees.id = locations.employee_id
+GROUP BY employees.name
+HAVING COUNT(locations.id) >= 2;
