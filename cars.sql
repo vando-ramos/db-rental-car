@@ -24,8 +24,13 @@ VALUES
 (5, 'Honda HR-V', 2018, 'Prata', 40000, 'Em manutenção', 7, 6),
 (6, 'VW Amarok', 2019, 'Prata', 25000, 'Liberado', 4, 6);
 
--- Update Fiat Cronos name
+-- Update Fiat Cronos year
 
 UPDATE cars
 SET year = '2019'
 WHERE name = 'Fiat Cronos';
+
+-- Delete Hyundai HB20 1.6
+
+DELETE FROM cars
+WHERE name = 'Hyundai HB20 1.6';
