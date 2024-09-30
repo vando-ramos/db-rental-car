@@ -55,3 +55,7 @@ JOIN customers ON locations.customer_id = customers.id
 JOIN cars ON locations.car_id = cars.id
 JOIN employees ON locations.employee_id = employees.id;
 
+-- Query to diplay how many rentals there are in the location table.
+
+SELECT COUNT(*) AS total_rentals
+FROM locations;
