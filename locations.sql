@@ -39,3 +39,19 @@ FROM customers
 JOIN locations ON customers.id = locations.customer_id
 GROUP BY customers.name
 HAVING COUNT(locations.id) >= 2;
+
+-- Query to display all rentals made, as well as the name of the customer, vehicle and employee linked to each rental.
+
+SELECT 
+    locations.id AS rental_id,
+    customers.name AS customer_name,
+    cars.name AS car_name,
+    employees.name AS employee_name,
+    locations.start_date,
+    locations.end_date,
+    locations.total
+FROM locations
+JOIN customers ON locations.customer_id = customers.id
+JOIN cars ON locations.car_id = cars.id
+JOIN employees ON locations.employee_id = employees.id;
+
