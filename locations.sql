@@ -59,3 +59,9 @@ JOIN employees ON locations.employee_id = employees.id;
 
 SELECT COUNT(*) AS total_rentals
 FROM locations;
+
+-- Query to display which rental had the highest total value.
+
+SELECT * FROM locations
+WHERE total = (SELECT MAX(total) FROM locations);
+
