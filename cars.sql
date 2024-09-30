@@ -34,3 +34,8 @@ WHERE name = 'Fiat Cronos';
 
 DELETE FROM cars
 WHERE name = 'Hyundai HB20 1.6';
+
+-- Query to display only status 'Liberado'
+
+SELECT * FROM cars
+WHERE status = 'Liberado';

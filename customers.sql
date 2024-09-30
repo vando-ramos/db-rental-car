@@ -39,7 +39,7 @@ UPDATE customers
 SET birth_date = '1986-06-19'
 WHERE name = 'Josefa';
 
--- Query to display name, lastname and email
+-- Query to display name, lastname and email from SP
 
 SELECT name, lastname, email
 FROM customers
