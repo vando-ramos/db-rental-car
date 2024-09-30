@@ -23,3 +23,9 @@ VALUES
 (4, 'Fiat Cronos', 2022, 'Preto', 2500, 'Liberado', 8, 2),
 (5, 'Honda HR-V', 2018, 'Prata', 40000, 'Em manutenção', 7, 6),
 (6, 'VW Amarok', 2019, 'Prata', 25000, 'Liberado', 4, 6);
+
+-- Update Fiat Cronos name
+
+UPDATE cars
+SET year = '2019'
+WHERE name = 'Fiat Cronos';
