@@ -32,3 +32,9 @@ VALUES
 UPDATE customers
 SET email = 'carolina@campuscode.com.br'
 WHERE name = 'Carolina' AND email = 'carol@ig.com.br';
+
+-- Update Josefa's birth_date
+
+UPDATE customers
+SET birth_date = '1986-06-19'
+WHERE name = 'Josefa';
