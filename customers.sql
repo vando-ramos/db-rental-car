@@ -38,3 +38,9 @@ WHERE name = 'Carolina' AND email = 'carol@ig.com.br';
 UPDATE customers
 SET birth_date = '1986-06-19'
 WHERE name = 'Josefa';
+
+-- Query to display name, lastname and email
+
+SELECT name, lastname, email
+FROM customers
+WHERE state = 'SP';
