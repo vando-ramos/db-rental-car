@@ -39,3 +39,8 @@ WHERE name = 'Hyundai HB20 1.6';
 
 SELECT * FROM cars
 WHERE status = 'Liberado';
+
+-- Query to display all cars from the year 2016
+
+SELECT * FROM cars
+WHERE year = '2016';
