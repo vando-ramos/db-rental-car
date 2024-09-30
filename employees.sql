@@ -23,3 +23,9 @@ VALUES
 -- Rename column phone
 
 ALTER TABLE employees RENAME COLUMN phone TO phone_number;
+
+-- Query to display all employees and their positions
+
+SELECT employees.name, positions.description
+FROM employees
+JOIN positions ON employees.position_id = positions.id;
