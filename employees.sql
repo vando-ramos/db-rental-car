@@ -19,3 +19,7 @@ VALUES
 (4, 'Mayara Gomes', '(11) 92649-9601', '2016-07-18', 2),
 (5, 'Matheus Alves', '(11) 92749-9602', '2015-03-04', 5),
 (6, 'Aline Santos', '(11) 99789-3135', '2020-05-06', 3);
+
+-- Rename column phone
+
+ALTER TABLE employees RENAME COLUMN phone TO phone_number;
